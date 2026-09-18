@@ -1,0 +1,12 @@
+services:
+  hub:
+    build: .
+    container_name: eve-hub
+    ports:
+      - "8281:8281"
+    environment:
+      PORT: 8281
+      DB_PATH: /data/hub.db
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

@@ -1,0 +1,9 @@
+{
+  "name": "new-eden-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dark-space wormhole connection hub inspired by the information architecture of public EVE wormhole trackers.",
+  "main": "server/index.js",
+  "scripts": {"start":"node server/index.js"},
+  "dependencies": {"express":"^5.1.0","better-sqlite3":"^12.4.1"}
+}
